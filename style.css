@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container{
+    display: grid;
+    width: 700px;
+    height: 700px;
+}
+.gridEle{
+    border: 2px solid black;
+}
