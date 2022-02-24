@@ -83,7 +83,7 @@ function fillBg(e){
         e.target.style.backgroundColor = currentColor;
     }
     else if(currentMode === "rainbow"){
-        e.target.style.backgroundColor = "yellow";
+        e.target.style.backgroundColor = rainbowcolor();
     }
     else{
         e.target.style.backgroundColor = "white";
@@ -110,6 +110,15 @@ function activeBtn(newMode){
     else{
         eraserBtn.classList.add('active');
     }
+}
+
+function rainbowcolor(){
+    let R = Math.floor(Math.random()*256);
+    let G = Math.floor(Math.random()*256);
+    let B = Math.floor(Math.random()*256);
+
+    let newColor = `rgb(${R},${G},${B})`
+    return newColor;
 }
 
 grid(currentSize);
