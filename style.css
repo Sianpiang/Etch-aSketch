@@ -1,8 +1,8 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -10,11 +10,40 @@ body{
     height: 100vh;
 }
 
-#container{
+.container{
     display: grid;
     width: 700px;
     height: 700px;
 }
+
 .gridEle{
-    border: 2px solid black;
+    border: 1px solid black;
 }
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.nav #color{
+    height: 70px;
+    width: 160px;
+    align-self: center;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 20px 35px;
+}
+
+.active{
+    background-color: black;
+    color: white;
+}
+.nav p{
+    align-self: center;
+}
+
